@@ -1,0 +1,78 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@mixin animeTheme {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(91, 182, 238);
+}
+h1 {
+  @include animeTheme();
+  font-size: xxx-large;
+}
+h3 {
+  color: rgb(91, 182, 238);
+}
+h2 {
+  color: rgb(91, 182, 238);
+}
+.imgVD {
+  min-width: 200px;
+  min-height: 200px;
+  padding-right: 20%;
+  padding-left: 20%;
+
+  & img {
+    border-radius: 25px;
+    width: 15%;
+  }
+  .imgTeam:hover {
+    transform: scale(1.3);
+    z-index: 2;
+  }
+}
+.container {
+  display: flex;
+}
+.imgTeam {
+  border-radius: 25px;
+  transition: 0.5s;
+  & img {
+    width: 50%;
+  }
+}
+
+.contactForm {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+.textarea {
+  background-color: #dddddd;
+  color: #666666;
+  padding: 1em;
+  border-radius: 10px;
+  border: 2px solid transparent;
+  outline: none;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.4;
+  width: 200px;
+  height: 100px;
+  transition: all 0.2s;
+}
+
+.forumbox {
+  & textarea {
+    height: 200px;
+    width: 400px;
+  }
+}
+
+//löste med en break i html
+.subL {
+  & label {
+  }
+}

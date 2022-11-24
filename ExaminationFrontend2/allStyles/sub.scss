@@ -1,0 +1,22 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@mixin animeTheme {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(91, 182, 238);
+}
+h1 {
+  @include animeTheme();
+  font-size: xxx-large;
+}
+.bigFourm {
+  margin-top: 30px;
+}
+
+.container {
+  display: center;
+  align-items: center;
+}

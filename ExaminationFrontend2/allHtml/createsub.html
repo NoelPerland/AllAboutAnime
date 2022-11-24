@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link rel="stylesheet" href="/allStyles/allCss/sub.css" />
+    <link
+  </head>
+  <body>
+    <h1>Create a Submission</h1>
+
+    <ul style="line-height: 22px">
+      <li><a href="/allHtml/index.html">Home</a></li>
+      <li><a href="/allHtml/allAnime.html">All Anime</a></li>
+      <li><a href="/allHtml/createsub.html">Create Submission</a></li>
+      <li><a href="/allHtml/about.html">About </a></li>
+    </ul>
+<div class="bigFourm">
+    <form action="/allHtml/results.html" method="GET" enctype="multipart/form-data">
+        <div>
+          <label for="name">Name</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Your name..."
+            required
+          />
+        </div>
+    <br>
+
+        
+        <div>
+          <label for="Aring date"> Aring Date</label>
+          <input
+            type="date"
+            name="date"
+            id="Date"
+            placeholder="xx/xx"
+            min="1900-01-01"
+          />
+      </div>
+    <br>
+        </div>
+        <label for="Rating">Rating</label>
+        <input
+          type="number"
+          name="Rating"
+          id="Rating"
+          placeholder="1-10"
+          max="10" 
+          min="1"
+      </div>
+    <br>
+  
+        <div>
+          <label for="bio">Short description</label>
+          <textarea name="description" id="description"></textarea>
+        </div>
+    <br>
+    <br>
+        <div>
+          <label for="Image">Image</label>
+          <input type="file" name="Image" id="file">
+          <input type="file" name="Image" id="file">
+          <input type="file" name="Image" id="file">
+          <input type="file" name="Image" id="file">
+        </div>
+  <br>
+  
+        <div>
+          <label for="Genre">Genre</label>
+          <select name="Genre" id="Genre" multiple>
+            <option value="Action">Action</option>
+            <option value="Adventure">Adventure</option>
+            <option value="Comedy">Comedy</option>
+            <option value="Drama">Drama</option>
+            <option value="Fantasy">Fantasy</option>
+            <option value="Psychological">Psychological</option>
+            <option value="Thriller">Thriller</option>
+          </select>
+  <br>
+  <br>
+  
+        </div>
+        <button type="reset">Reset</button>
+        <button type="submit">Submit</button>
+      </form>
+</div>
+    
+
+  </body>
+</html>
