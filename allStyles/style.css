@@ -42,7 +42,8 @@ h1 {
   flex-direction: column;
   align-items: center;
 }
-.bg-img .cards {
+
+.big__card .cards {
   margin: 0;
   text-align: center;
   max-width: 900px;
@@ -51,11 +52,11 @@ h1 {
   grid-template-columns: repeat(3, 1fr);
   gap: 80px;
 }
-.bg-img .cards .card__image {
+.big__card .cards .card__image {
   width: 90%;
   display: block;
 }
-.bg-img .cards .card__info {
+.big__card .cards .card__info {
   padding: 15px;
   display: flex;
   justify-content: space-between;
@@ -65,26 +66,26 @@ h1 {
   font-size: 0.8em;
   border-bottom: 2px solid #ccc;
 }
-.bg-img .card__content {
+.big__card .card__content {
   line-height: 1.5;
   font-size: 0.9em;
   padding: 15px;
   background: rgb(242, 242, 242);
 }
-.bg-img .card__content > p:first-of-type {
+.big__card .card__content > p:first-of-type {
   margin-top: 0;
 }
-.bg-img .card__content > p:last-of-type {
+.big__card .card__content > p:last-of-type {
   margin-bottom: 0;
 }
-.bg-img .card__info i {
+.big__card .card__info i {
   font-size: 0.9em;
   margin-right: 8px;
 }
-.bg-img .card__link {
+.big__card .card__link {
   color: #649;
 }
-.bg-img .card__link:hover {
+.big__card .card__link:hover {
   text-decoration: underline;
 }
 
